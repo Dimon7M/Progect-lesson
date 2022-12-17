@@ -1,26 +1,18 @@
-// "use strict";
+const numberOffFilms = +prompt('Сколько фильмов Вы уже посмотрели?','');
+const personalMovieDB = {
+    count: numberOffFilms,
+    movies:{},
+    actors:{},
+    genres: [],
+    privat: false    
+};
 
-// let number = 5;
-// const width = 1;
-// number = 10;
-// console.log(number);
+const a = prompt('Один из просмотренных последних фильмов?',''),
+      b = prompt('На сколько оцените его',''),
+      c = prompt('Один из просмотренных последних фильмов?',''),
+      d = prompt('На сколько оцените его','');
 
-// let obj = {
-//     userName: "John",
-//     age: 25,
-//     isMarried: false,
-// };
-// console.log(obj);
-// userName = 'Vasia';
-// isMarried = true;
-// console.log(obj);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-let incr = 11,
-    decr = 10;
-
-incr++; 
-decr--;
-
-
-    console.log(incr);
-    console.log(decr);
+console.log(personalMovieDB);
